@@ -1,0 +1,20 @@
+package constructor;
+
+public class Main {
+	public static void main(String[] args) {
+		// constructor 패키지 내부에 소속된 Car를 호출할때는
+		// 같은 영역이기 때문에 constructor.Car로 호출해도 되고
+		// 그냥 Car 해도 됨
+		// 다른 패키지의 Car를 호출할때는 앞에 패키지.Car로 주소를 정확히 해야함
+		
+		Car car1=new Car(0, 0, "아스라다");
+		
+		//자동차 정보조회
+		car1.getInfo();
+		car1.accelSpeed();
+		car1.breakSpeed();
+		
+		
+	}
+
+}

@@ -1,0 +1,22 @@
+package interaction.game;
+
+public class Commoner {
+	private int level;
+	private String id;
+	private int hp;
+	private int mp;
+	private int Attack;
+	private int Deffense;
+	
+	public Commoner(int lev,String id,int hp,int mp,int atk,int def) {
+		this.level=lev;
+		this.id=id;
+		this.hp=hp;
+		this.mp=mp;
+		this.Attack=atk;
+		this.Deffense=def;
+		
+	}
+	
+
+}

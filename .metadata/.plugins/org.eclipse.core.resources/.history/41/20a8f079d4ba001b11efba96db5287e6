@@ -1,0 +1,27 @@
+package day0522.operator;
+
+public class Test08 {
+	public static void main(String[] args) {
+		/*
+		 * 사용자에게 입력 받기
+		 * 
+		 * 		  
+		 */
+		// Scanner (class생각 첫문자 대문자 주의) api(함수같은것)중 하나
+		// Scanner 데이터타입 sc 변수의 이름
+		//기본타입들 제외하곤 대문자로 시작하는 것들임 답은 new로 시작함 클래스문법!
+        // 형태
+		Scanner sc = new Scanner();
+		
+		//Test t = new Test(); 어떠한 데이터 타입이던 이런 형식 
+		 
+		
+		
+		
+		System.out.println();
+		
+		
+		
+	}
+
+}

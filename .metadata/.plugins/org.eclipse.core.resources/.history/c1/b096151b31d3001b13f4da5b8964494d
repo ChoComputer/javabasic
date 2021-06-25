@@ -1,0 +1,10 @@
+package accessmodifier;
+
+public class Warrior {
+	// hp atk level exp 속성추가
+	public int hp;
+	public int atk;
+	public int level;
+	public int exp;
+
+}

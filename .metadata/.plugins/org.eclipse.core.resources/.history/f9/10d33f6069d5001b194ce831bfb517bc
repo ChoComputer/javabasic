@@ -1,0 +1,20 @@
+package polymorphism;
+
+public class Utuber extends Person {
+
+	private String personCount;
+
+	public Utuber(String n, int a, String pC) {
+		super("유튜버", 20);
+
+		this.personCount = pC;
+	}
+
+	public void showUtuber() {
+		super.showPerson();
+		System.out.println("구독자수 : "+pC);
+		System.out.println("---------------------------";
+		
+	}
+
+}

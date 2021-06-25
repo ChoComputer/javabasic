@@ -1,0 +1,12 @@
+package day0605;
+
+public class Test01 {
+
+ 이클립스
+ 편집기 코드작성 툴이다.
+ workspace -> project(begin-java)->src(~.java) : 개발자가 알수 있는 언어
+                                    bin(~.Class) : 자바를 실행하는 기계 (JVM) 가 아는 언어(byte code)
+ 패키지(package)
+  - 코드를 기능 단위 구분
+  - 작성한 코드를 다른 사람이 작성한 것과 충돌나는 것을 막는다. 주소같은것
+  - 회사 도메인 활용한다.(com.naver.프로젝트명.기능...)

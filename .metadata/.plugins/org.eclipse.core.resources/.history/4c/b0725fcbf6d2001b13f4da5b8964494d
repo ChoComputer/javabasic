@@ -1,0 +1,19 @@
+package Inheritance;
+
+public class Student extends Person {
+	// 공통 속성(이름,나이)이 아닌 학생만의 개별적 특성 정의
+	
+	public String major;
+	public int plusScore;
+	
+	public void getScore() {
+		plusScore++;
+		
+	}
+	
+	public void getStudentInfo() {
+		System.out.println("저의 전공은 "+major+"입니다.");
+		System.out.println("저의 상점은 "+plusScore+"입니다.");
+	}
+
+}

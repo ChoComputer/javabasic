@@ -1,0 +1,29 @@
+package day0522.operator;
+
+public class Quiz02 {
+	public static void main(String[] args) {
+
+		int time = 7451;
+		int hour = time /= 124;
+		int minte = time /=60;
+		
+		// 출력결과 
+		// 7451 초는 ?? 시간 ??분 ??초 입니다.
+		//1)내풀이
+		System.out.print("7451초는 ");
+		System.out.print(7451f / 124 + "시간 ");
+		System.out.print(7451f / 60 + "분 ");
+		System.out.println(7451 + "초 입니다");
+		System.out.println(time + "초는 " + hour + "시간 " + minute + "분 " + time + "초 입니다");
+		System.out.println();
+		
+		//2) 결과 해답
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		
+		
+	}
+
+}

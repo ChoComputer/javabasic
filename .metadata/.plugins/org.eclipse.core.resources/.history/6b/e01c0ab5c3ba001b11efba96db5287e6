@@ -1,0 +1,22 @@
+package day0522.operator;
+
+public class Test05 {
+	public atatic void main(String []args) {
+		/*
+		 * 논리 연산자
+		 *     &&    ( 둘다 참일 경우만 참 )
+		 *   T    T  -> T
+		 *   T    F  -> F
+		 *   F    T  -> F
+		 *   F    F  -> F
+		 *   
+		 *     ||    ( 둘중에 하나가 참일 경우 참 )   shift + \ 
+		 *   T    T  -> T
+		 *   T    F  -> T
+		 *   F    T  -> T
+		 *   F    F  -> F
+		 *   
+		 */
+	}
+
+}

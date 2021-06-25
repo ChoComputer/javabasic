@@ -1,0 +1,11 @@
+package superclass;
+
+public class Main1 {
+	public static void main(String[] args) {
+		
+		getInfo a1= new getInfo(300);
+	    a1.fly();
+		
+	}
+
+}

@@ -1,0 +1,18 @@
+package buyandsell;
+
+public class Main1 {
+	public static void main(String[] args) {
+
+		Buyer b = new Buyer(3000);
+		Seller s=new Seller(5);
+		Seller s1=new Seller(3);
+		
+		
+		
+		s.showSeller();
+		b.ShowBuyer();
+		b.BuyMango(6, s1);
+	
+
+	}
+}

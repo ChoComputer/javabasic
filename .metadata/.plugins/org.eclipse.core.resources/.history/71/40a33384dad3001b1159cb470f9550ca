@@ -1,0 +1,21 @@
+package accessmodifier.game;
+
+public class Commoner {
+	
+	public int hp;
+	public int level;
+	public int mp;
+	public int exp;
+	
+	public void getInfo() {
+		System.out.println("레벨: "+level);
+		System.out.println("체력/마력: "+hp+"/"+mp);
+		System.out.println("----------------------");
+		
+	}
+	
+	 
+	
+	
+
+}

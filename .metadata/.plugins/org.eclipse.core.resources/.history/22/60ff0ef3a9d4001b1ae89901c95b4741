@@ -1,0 +1,74 @@
+package buyandsell;
+
+public class Buyer {
+	// 구매자
+	// 구매자는 돈 , 망고 갯수를 멤버 변수로 가짐
+	// private로 처리
+
+	// 생성자는 (int money)를 받아 돈을 초기화함
+	// 망고는 자동으로 0을 대입
+
+	// BuyMango는 망고를 산다.
+	// (int mango)로 망고 갯수를 입력받으면 , 망고 *1000만큼 돈을 차감후 갯수 증가
+
+	// ShowBuyer은 구매자 상태를 보여줌
+	// money mango 수치를 콘솔에 찍어준다
+
+	private int money;
+	private int mango;
+
+	public Buyer(int m) {
+		this.money = m;
+
+	}
+
+	public int getMoney() {
+		return money;
+	}
+
+	public void setMoney(int money) {
+		this.money = money;
+	}
+
+	public int getMango() {
+		return mango;
+	}
+
+	public void setMango(int mango) {
+		this.mango = mango;
+	}
+
+	public void BuyMango(int mg, Seller s) {
+
+		if (money < mg * 1000 || s.getStoreMango() < mg) {
+			System.out.println("============================");
+			System.out.println("망고를 " + mg + "개 구입 희망 하셨는데.");
+			if (money < mg * 1000) {
+				System.out.println(mg + "개는 " + mg * 1000 + "원 입니다.");
+				System.out.println("구매자의 현재 보유 금액은  " + money + "원 가지고 입니다.");
+				System.out.println("금액이 "+ mg*1000-money + "원 만큼 부족합니다.");
+			}
+			System.out.println("상점에는 " + s.getStoreMango() + "개를 보유하고 있습니다.");
+			System.out.println("============================");
+			return;
+		} else {
+			mango += mg;
+			money -= mg * 1000;
+			s.setStoreMango(s.getStoreMango() - mg);
+			s.setStoreMoney(s.getStoreMoney() + mg * 1000);
+			System.out.println("************현재상황****************");
+			System.out.println("망고 " + mg + "개를 구매하였습니다.");
+			System.out.println("현재 손님 망고 갯수 : " + mango);
+			System.out.println("현재 상점 망고 갯수 : " + s.getStoreMango());
+		}
+	}
+
+	public void ShowBuyer() {
+		System.out.println("-------------------------");
+		System.out.println("[[손님]]");
+		System.out.println("보유금액 : " + this.money);
+		System.out.println("보유 망고수: " + this.mango);
+		System.out.println("-------------------------");
+	}
+
+}

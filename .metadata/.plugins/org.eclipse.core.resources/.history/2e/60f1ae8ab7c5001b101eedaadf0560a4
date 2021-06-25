@@ -1,0 +1,33 @@
+/*
+ *  1 2 3 4 ....10
+ *  11 12 13 ...20
+ *  ...
+ *  ...
+ *  91 92 93 ...100
+ */
+package day0529.loop;
+
+public class Quiz04 {
+	public static void main(String[] args) {
+		
+		
+//		
+//		for (int i = 1; i<=100; i++ ) {
+//			System.out.print( i +" ");
+//			if(i%10==0) {
+//				System.out.println();
+//			}else {
+//				System.out.print(" ");
+//			}
+//		}
+		for (int i = 1; i<=100; i++ ) {
+			System.out.print( i +" ");
+			if(i%10==0) {
+				System.out.println();
+			}else {
+				System.out.print(" ");
+			}
+		}
+	}
+
+}

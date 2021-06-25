@@ -1,0 +1,19 @@
+package day0522.operator;
+
+public class Test08 {
+	public static void main(String[] args) {
+		/*
+		 * 사용자에게 입력 받기
+		 * 
+		 * 		  
+		 */
+		// Scanner (class생각 첫문자 대문자 주의)
+
+		
+		System.out.println();
+		
+		
+		
+	}
+
+}

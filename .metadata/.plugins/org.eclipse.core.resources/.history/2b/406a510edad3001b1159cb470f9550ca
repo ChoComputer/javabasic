@@ -1,0 +1,14 @@
+package accessmodifier.game;
+
+public class Main1 {
+	public static void main(String[] args) {
+		Warrior w=new Warrior("칼있수마훈");
+		w.getInfo();
+		w.doubleAttack();
+		w.hunt();
+		w.getInfo();
+		
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package constructor;
+
+public class Main2 {
+	public static void main(String[] args) {
+		food F=new food("맥도날드","버거","양식",false);
+		food F2=new food("돼지나라","삼겹살","한식",true);
+		// ctrl + food 좌클릭 해보면 food  가 어디에 연결되있느지 알려줌
+		
+		F.getInfo();
+	
+	}
+
+}

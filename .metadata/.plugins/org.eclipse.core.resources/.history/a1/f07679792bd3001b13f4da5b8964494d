@@ -1,0 +1,19 @@
+package thiskeyword;
+
+public class Person {
+	//사람의 정보를 여기에 기입합니다.
+	public String name;
+	public int age;
+	public int money;
+	public String major;
+	
+	// 생성자를 활용합니다.
+	
+	public Person(String name, int age, int money,String major) {
+		
+	}
+	
+	
+	// getInfo()를 이용해 조회함
+
+}

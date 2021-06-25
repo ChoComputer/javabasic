@@ -1,0 +1,39 @@
+package accessmodifier.game;
+
+public class Paladin extends ProtectedCommoner {
+
+	public void HolyAttack() {
+		if (getMp() > 0) {
+			setHp(getHp() + 3);
+			setMp(getMp() - 5);
+			setExp(getExp() + 13);
+			System.out.println("======================");
+			System.out.println("성직자의 [[HolyAttack]]!!!");
+			System.out.println("=======================");
+		} else {
+			System.out.println("마나가 부족하여 스킬이 취소되었습니다.");
+		}
+	}
+	public void getAllData() {
+		System.out.println("[팔라딘]");
+		super.getAllData();
+	}
+	public void hunt() {
+		System.out.println("[팔라딘]이 악한것들의 정화를 시작합니다.");
+		super.hunt();
+	}
+
+	public void Heal() {
+		if (getMp() > 0) {
+			setHp(getHp() + 6);
+			setMp(getMp() - 3);
+			System.out.println("======================");
+			System.out.println("팔라딘의 [[Heal]]!!");
+			System.out.println("팔라딘의 HP가" +getHp()"되었습니다.");
+			System.out.println("=======================");
+		} else {
+			System.out.println("마나가 부족하여 스킬이 취소되었습니다.");
+		}
+	}
+
+}

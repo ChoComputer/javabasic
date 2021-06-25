@@ -1,0 +1,38 @@
+package day0529.ifswitch;
+
+import java.util.Scanner;
+
+public class Quiz08 {public static void main(String[] args) {
+	/*
+	 * 서로다른 숫자를 입력받는다(양수)
+	 * 
+	 * 입력받은 수중에 가장 큰값을 출력하여라
+	 * 
+	 * 
+	 * 출력형식
+	 * 
+	 * 숫자1 : 10
+	 * 숫자2 : 50
+	 * 숫자3 : 7
+	 * 
+	 * 최대값 : 50
+	 * 
+	 */
+	Scanner sc = new Scanner (System.in);
+	System.out.println("숫자1 :");
+	System.out.println("숫자2 :");
+	System.out.println("숫자3 :");
+	int num =sc.nextInt();
+	//if
+	
+	
+	
+	}
+	
+	
+	
+	
+	
+}
+
+}

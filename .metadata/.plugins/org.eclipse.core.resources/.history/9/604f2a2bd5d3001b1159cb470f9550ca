@@ -1,0 +1,12 @@
+package accessmodifier.game;
+
+public class Commoner {
+	
+	private int hp;
+	private int level;
+	private int mp;
+	private int exp;
+	
+	
+
+}

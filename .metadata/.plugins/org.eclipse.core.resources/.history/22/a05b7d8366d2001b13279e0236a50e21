@@ -1,0 +1,21 @@
+package constructor;
+
+public class Main {
+	public static void main(String[] args) {
+		Car car1=new Car(0, 0, "아스라다");
+		
+		//자동차 정보조회
+		car1.getInfo();
+		car1.accelSpeed();
+		car1.breakSpeed();
+		
+		// 다른 패키지의 Car 호출
+		constructor.Car car2= new constructor.Car();
+		car2.model="k5";
+		car2.owner="와우";
+		car2.price =100000000;
+		
+		car2.getInfo();
+	}
+
+}

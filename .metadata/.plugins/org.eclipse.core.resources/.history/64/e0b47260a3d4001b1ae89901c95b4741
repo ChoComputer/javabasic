@@ -1,0 +1,17 @@
+package buyandsell;
+
+public class Main1 {
+	public static void main(String[] args) {
+
+		Buyer b = new Buyer(3000);
+				
+		Seller s=new Seller(5);
+		s.showSeller();
+		s.SellMango(3);
+		s.showSeller();
+		s.SellMango(3);
+		s.showSeller();
+	
+
+	}
+}

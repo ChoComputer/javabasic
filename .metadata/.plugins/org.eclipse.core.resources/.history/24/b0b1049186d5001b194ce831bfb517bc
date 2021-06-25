@@ -1,0 +1,6 @@
+package polymorphism.game;
+
+public class Orc extends Monster{
+	public Orc("Orc",10,3,1);
+
+}

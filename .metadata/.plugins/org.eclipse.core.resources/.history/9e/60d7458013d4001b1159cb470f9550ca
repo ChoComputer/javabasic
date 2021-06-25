@@ -1,0 +1,14 @@
+package superTest;
+
+public class Sun extends SuperMom{
+	
+	public Sun() {
+		super(5,0,50,30);
+		
+	}
+	public void Data() {
+		
+	}
+
+	
+}

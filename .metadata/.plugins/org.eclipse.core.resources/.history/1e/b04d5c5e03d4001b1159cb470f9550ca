@@ -1,0 +1,11 @@
+package superTest;
+
+public class Main {
+	public static void main(String[] args) {
+		SuperMom m = new SuperMom();
+		m.Data();
+		
+		
+	}
+
+}

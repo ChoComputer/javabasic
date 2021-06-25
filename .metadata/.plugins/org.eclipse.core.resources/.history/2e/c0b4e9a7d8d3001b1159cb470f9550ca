@@ -1,0 +1,32 @@
+package accessmodifier.game;
+
+public class Commoner {
+	
+	public int hp;
+	public int level;
+	public int mp;
+	public int exp;
+	
+	public void getInfo() {
+		System.out.println("레벨: "+level);
+		System.out.println("체력/마력: "+hp+"/"+mp);
+		System.out.println("----------------------");
+		
+	}
+	
+	public void hunt() {
+		hp-=(int) (Math.random() * 6);;
+		exp+=10;
+		if(hp>0) {
+			System.out.println("사냥의 시간이 돌아왔다.");
+		System.out.println("사냥 결과 체력은 "+hp+"가 되었고");
+		System.out.println("누적 경험치는 "+exp+"가 되었습니다.");
+		System.out.println("-----------------------------");
+	}else if(hp<=0) {
+		System.out.println("You die");
+	}
+	} 
+	
+	
+
+}

@@ -1,0 +1,23 @@
+package day0522.operator;
+
+public class Test03 {
+	public static void main(String [] args) {
+		/*
+		 * 증감연산자
+		 *  : 변수의 값을 1 증가 또는 1감소 시킨다. 별도의 대입이 필요없음
+		 *  
+		 *  
+		 *  
+		 *  
+		 */
+		3+5;
+		
+		
+		
+		System.out.println();
+	}
+	
+	
+	
+
+}

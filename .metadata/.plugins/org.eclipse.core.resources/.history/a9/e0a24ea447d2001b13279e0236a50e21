@@ -1,0 +1,19 @@
+package constructor;
+
+public class food {
+	
+	public String name;
+	public String type;
+	public boolean flavor;
+	
+	public food(String n, String t, boolean f) {
+		
+		name=n;
+		type=t;
+		flavor=f;
+		
+		System.out.println("음식 이름 : "+n+"\n종류 : "+t+"\n맛 : "+f);
+		
+	}
+
+}

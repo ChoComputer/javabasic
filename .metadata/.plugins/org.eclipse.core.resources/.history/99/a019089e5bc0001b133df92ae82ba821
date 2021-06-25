@@ -1,0 +1,14 @@
+package day0605.loop;
+
+public class Quiz03 {public static void main(String[] args) {
+	
+	/*
+	 * 7의 배수 10 개 출력
+	 */
+	for (int i =7;i<=70;i+=7) {
+		System.out.println(i);
+	}
+		
+}
+
+}

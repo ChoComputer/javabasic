@@ -1,0 +1,25 @@
+package constructor;
+
+public class BasketballPlayer {
+	
+	public int height;
+	public int jumpPower;
+	
+	public BasketballPlayer(int h,int j) {
+		
+		height=h;
+		jumpPower = j;
+		
+	}
+	
+	public void getInfo() {
+		
+		if(height+jumpPower >=300) {
+			System.out.println("덩크슛에 성공했습니다.");
+		}else if(0<height+jumpPower) {
+		   System.out.println("골대에 닿지 않습니다.");
+		}
+		
+	}
+}
+

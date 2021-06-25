@@ -1,0 +1,11 @@
+package Inheritance;
+
+public class Student extends Person {
+	
+	public String major;
+	
+	public void getStudentInfo() {
+		System.out.println("저의 전공은 "+major+"입니다.");
+	}
+
+}

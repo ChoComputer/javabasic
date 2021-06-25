@@ -1,0 +1,38 @@
+package structure;
+
+public class CatStructure01 {
+	
+	public static void catgetInfo(Cat z) {
+		
+		System.out.println("고양이 이름 : "+z.name);
+		System.out.println("고양이 나이 :"z.age);
+		System.out.println(z.type);
+		
+			
+		
+	}
+		
+	
+	public static void main(String[] args) {
+		
+		Cat a= new Cat();
+		
+		a.name="냥냥이";
+		a.age=3;
+		a.type="bbbt";
+				
+		Cat b= new Cat();
+		
+		b.name="솜솜이";
+		b.age=1;
+		b.type="aaa";	
+		
+				catgetInfo(a);
+				catgetInfo(b);
+				
+				
+		
+		
+	}
+
+}

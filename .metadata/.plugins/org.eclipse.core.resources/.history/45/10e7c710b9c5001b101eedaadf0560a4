@@ -1,0 +1,29 @@
+/*
+ *  1 2 3 4 ....10
+ *  11 12 13 ...20
+ *  ...
+ *  ...
+ *  91 92 93 ...100
+ */
+package day0529.loop;
+
+public class Quiz04 {
+	public static void main(String[] args) {
+		
+		
+//		
+//		for (int i = 1; i<=100; i++ ) {
+//			System.out.print( i +" ");
+//			if(i%10==0) {
+//				System.out.println(); //줄넘김 문자임
+//			}else {
+//				System.out.print(" ");
+//			}
+//		}
+		for (int i = 1; i<=110; i++ ) {
+			//%d 정수 %s문자열 %f실수 %c문자
+			System.out.printf("%3d%s", i, i%10==0 ? "\n" : " ") ;
+		}
+	}
+
+}

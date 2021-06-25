@@ -1,0 +1,10 @@
+package day0605;
+
+public class Test01 {
+
+1. 이클립스
+2 편집기 코드작성 툴이다.
+3 workspace -> project(begin-java)->src(~.java) : 개발자가 알수 있는 언어
+                                    bin(~.Class) : 자바를 실행하는 기계 (JVM) 가 아는 언어
+
+4

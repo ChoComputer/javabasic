@@ -1,0 +1,12 @@
+package accessmodifier3;
+
+import accessmodifier2.Parent;
+//accessmodifier2 에 있는  Parent를 상속받기위해서 사용
+
+// Child2는 accessmodifier3 패키지 소속
+// Parent는 accessmodifier2 패키지 소속으로 
+// 부모자식간 클래스 소속이 다르다.
+public class Child2 extends Parent {
+
+
+}

@@ -1,0 +1,7 @@
+package accessmodifier.game;
+
+import inheritance.game.Commoner;
+
+public class Archor extends Commoner {
+
+}

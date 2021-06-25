@@ -1,0 +1,13 @@
+package day0529.loop;
+import java.util.Random;
+public class Quiz17 {public static void main(String[] args) {
+	Random r = new Random();
+	
+	int num = r.nextInt(100);  //0부터 숫자-1 까지 나옴
+	//int num = r.nextInt(100)+1;  1부터 100 까지 나옴
+	//int num = r.nextInt(11)+10;  10부터 20 까지 나옴
+	System.out.println(num);
+	
+}
+
+}

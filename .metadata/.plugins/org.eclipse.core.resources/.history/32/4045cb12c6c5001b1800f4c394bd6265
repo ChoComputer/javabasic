@@ -1,0 +1,18 @@
+package day0529.loop;
+
+public class Test03 {public static void main(String[] args) {
+	/*
+	 * 반복문 빠져나오기
+	 * break
+	 * 
+	 */
+	for (int i =1; i<11; i++) {
+		System.out.println(i);
+		if(i > 5 ) {   //i가 6부터 크다는 조건
+			break; // 즉시 반복문을 멈춰라
+		}
+	}
+	System.out.println("반복 빠져나옴");
+}
+
+}

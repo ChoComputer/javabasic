@@ -1,0 +1,13 @@
+package polymorphism;
+
+public class FoodFighter extends Person {
+	
+	private String menu;
+	
+	public FoodFighter(String n,int ag,String m) {
+		super(n,ag);
+		this.menu=m;
+		
+	}
+
+}

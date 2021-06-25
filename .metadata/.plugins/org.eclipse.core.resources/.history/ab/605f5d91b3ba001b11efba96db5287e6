@@ -1,0 +1,38 @@
+/*  
+ * ctrl + d : 줄 삭제
+ * main(print.....)+ ctrl +space : 자동완성
+ * ctrl + alt + 방향키 : 빠른줄복사
+ */
+package day0515.class03;
+
+public class Test02 {
+	public static void main(String[] args) {
+		// <- 한줄만 주석문이 됨
+		// 주석문은 프로그램 실행시 포함 안됨 실행안됨
+		// 주석문은 개발자한테 코드에 대한 주석을 달기 위해 쓰는것 ( // /* ~ */ )
+		// .class에는 포함안됨 컴퓨터는 모르는 것임 주석문은 .class에는 포함이 안되있음
+		// 숫자를 문자열로 표현할때는 ""안에 넣어서 표현하고 숫자(INT)그대로 또는 계산된 숫자를 표현할 때는 ""를 안붙힌다.\
+		/*
+		 * 범위 주석문 여러줄 주석문 주석문 여러개 작성 하기 위해 사용되는 것 /~/ 안이 범위
+		 */
+		//밑에는 주석문의 활용 /넣고 빼는걸로 표기를 한다 안한다를 선택할수 있음
+		//*
+		System.out.println("1"); 
+		System.out.println("나"+2);
+		System.out.println(2+2);
+		System.out.println("2+2");
+		System.out.println(3i);
+		System.out.println(4);
+		//*/
+		/*
+		System.out.println("1"); 
+		System.out.println("나"+2);
+		System.out.println(2+2);
+		System.out.println("2+2");
+		System.out.println(3);
+		System.out.println(4);
+		*/
+		
+	}
+
+}

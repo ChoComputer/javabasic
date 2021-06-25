@@ -1,0 +1,16 @@
+package polymorphism.game;
+
+public class Orc extends Monster{
+	
+	
+	public Orc(String id,int hp,int atk,int def) {
+		super("Orc", 10, 3, 1);
+	}
+	
+	public void dobattle(int uatk) {
+		super.dobattle(uatk);
+				
+	}
+		
+
+}

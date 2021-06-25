@@ -1,0 +1,28 @@
+package day0529.ifswitch;
+
+import java.util.Scanner;
+
+public class Test05 {public static void main(String[] args) {
+	/*
+	 * switch
+	 * 
+	 * :동등 비교시 사용
+	 * 
+	 * ;-> 세미콜론
+	 * :-> 콜론
+	 * 
+	 * switch(수식) {
+	 *       case 값1:     
+	 *          처리할 문장    ->> 수식과 값 1이 같은 값일 경우 실행됨   수식과 값1이 같은지를 따짐
+	 *       case 값2:     
+	 *          처리할 문장    ->> 수식과 값 2이 같은 값일 경우 실행됨   수식과 값2이 같은지를 따짐
+	 *       case 값3:     
+	 *          처리할 문장    ->> 수식과 값 3이 같은 값일 경우 실행됨   수식과 값3이 같은지를 따짐
+	 * }
+	 * 
+	 *
+	 */
+	Scanner sc =new Scanner(System.in);
+}
+
+}

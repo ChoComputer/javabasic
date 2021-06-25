@@ -1,0 +1,30 @@
+package day0605.loop;
+
+public class Test01 {public static void main(String[] args) {
+	/*
+	 * 
+	 * for ( ; ; )
+	 *     실행문장
+	 * 
+	 * for ( 초기값 ; 참or거짓 ; 조건의 영향을 주는 값의 증감 ) {
+	 *     참일 경우 수행
+	 *     실행문장
+	 *     실행문장
+	 *     실행문장
+	 *       .
+	 *       .
+	 *     }
+	 *     
+	 *     
+	 */
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+}

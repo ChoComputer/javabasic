@@ -1,0 +1,11 @@
+package constructor;
+
+public class Main2 {
+	public static void main(String[] args) {
+		food F=new food("햄버거","양식",false);
+		food F=new food("삼겹살","한식",true);
+		
+	
+	}
+
+}

@@ -1,0 +1,15 @@
+package superTest;
+
+public class Main {
+	public static void main(String[] args) {
+		SuperMom m = new SuperMom();
+		m.Data();
+		
+		m.setter(100,89, 999999999, 999999999);
+		
+		Sun s=new Sun();
+		s.Data();
+		
+	}
+
+}

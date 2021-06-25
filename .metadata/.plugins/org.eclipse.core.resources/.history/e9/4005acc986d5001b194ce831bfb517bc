@@ -1,0 +1,20 @@
+package polymorphism.game;
+
+public class Archer {
+	private int hp;
+	private int mp;
+	private int atk;
+	private int def;
+	private int lv;
+	private int exp;
+
+	public Archer() {
+		this.hp = 20;
+		this.mp = 10;
+		this.atk = 4;
+		this.def = 1;
+		this.lv = 1;
+		this.exp = 0;
+	}
+
+}

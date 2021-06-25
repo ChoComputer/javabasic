@@ -1,0 +1,14 @@
+package buyandsell;
+
+public class Seller {
+	
+	//보유 최대 망고수
+	//보유금액
+	// buyer의 망고수
+	// buyer의 금액
+	
+	privated stroeMango;
+	privated stroeMoney;
+
+
+}

@@ -1,0 +1,19 @@
+package day0605.loop;
+
+public class Quiz02 { public static void main(String[] args) {
+	
+	/*
+	 * 10 20 30 40 50 출력되게 해라 
+	 * for 문을 이용하여
+	 * 
+	 */
+	
+	for(int i = 10; i<=50; i+=10)
+		System.out.println(i);
+	
+	
+	
+	
+}
+
+}

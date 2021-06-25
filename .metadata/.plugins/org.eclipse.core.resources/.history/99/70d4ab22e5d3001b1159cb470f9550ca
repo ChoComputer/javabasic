@@ -1,0 +1,55 @@
+package accessmodifier.game;
+
+import inheritance.game.Commoner;
+
+public class ProtectedMagician extends ProtectedCommoner {
+	protected int  fireBall;
+
+	public ProtectedMagician(String id) {
+
+		this.hp = 20;
+		this.mp = 40;
+		this.level = 1;
+		this.exp = 0;
+	}
+
+	public void  fireBall() {
+		if (mp - 5 > 0) {
+			System.out.println("마법사가 파이어볼을 사용합니다.");
+			mp -= 5;
+			exp+=15;
+		}else {
+			System.out.println("마나가 부족하여 스킬이 취소됩니다.");
+		}
+	}
+
+	public void hunt() {
+		hp -= (int) (Math.random() * 7);
+		exp += 10;
+		if (hp > 0) {
+			System.out.println("사냥 결과 체력은 " + hp + "가 되었고");
+			System.out.println("사냥 결과 마나는 " + mp + "가 되었고");
+			System.out.println("누적 경험치는 " + exp + "가 되었습니다.");
+			System.out.println("-----------------------------");
+		} else if (hp <= 0) {
+			System.out.println("You die");
+		}
+	}
+
+	public void getInfo() {
+		if(hp>0) {
+		System.out.println("레벨: " + level);
+		System.out.println("체력 : " + hp);
+		System.out.println("마력 : " + mp);
+		System.out.println("경험치 : " + exp);
+		System.out.println("----------------------");
+		}else {
+			System.out.println("사망중인 상태입니다.");
+			System.out.println("레벨: " + level);
+			System.out.println("체력 : " + "0");
+			System.out.println("마력 : " + mp);
+			System.out.println("경험치 : " + exp);
+			System.out.println("----------------------");
+		}
+	}
+}

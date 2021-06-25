@@ -1,0 +1,23 @@
+package day0522.operator;
+
+public class Test08 {
+	public static void main(String[] args) {
+		/*
+		 * 사용자에게 입력 받기
+		 * 
+		 * 		  
+		 */
+		// Scanner (class생각 첫문자 대문자 주의) api(함수같은것)중 하나
+		// Scanner 데이터타입 sc 변수의 이름
+
+		Scanner sc = 
+		
+		
+		
+		System.out.println();
+		
+		
+		
+	}
+
+}

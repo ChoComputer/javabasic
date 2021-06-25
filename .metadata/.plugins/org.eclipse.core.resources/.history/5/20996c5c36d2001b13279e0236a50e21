@@ -1,0 +1,10 @@
+package structure;
+
+public class Cat {
+	
+	public String Cname;
+	public int Cage;
+	public String Ctype;
+	
+
+}

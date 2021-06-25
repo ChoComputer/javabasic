@@ -1,0 +1,33 @@
+package day0522.operator;
+
+public class Test01 {
+	public static void main(String []args) {
+		
+		  //System.out.println("홍길동"+100);
+		 
+		/*
+		 * 산술연산자
+		 * : +, -, *(곱하기,'에스타리프'라 부름), /(몫), %(나머지) 
+		 * int(정수,계산가능), string(더하기만됨), char(계산가능,문자에 해당하는 숫자코드로 바꿔서 관리해서)
+		 * "1"+"2" = "12"
+		 * ctrl + 화살표방향 : 단어 단위로 움직여짐 커서가
+		 */
+		
+		
+		  System.out.println(100+200);
+		  System.out.println(100*200);
+		  System.out.println(100-200);
+		  System.out.println(100/200);     
+		  // 앞뒤 타입이 int면 값이 int로 계산 실수(소수점수)는 float, double(기본타입으로 설정되있음) 이 있음
+		  // 1.5234 : 별도 명령이 없으면 double로 되있음, 1.1f : 이건 float 으로 취급 대소문자 상관 x 
+		  // 100 - int가됨 (소수점없어서) [산술연산자+-*%/] 100 -int임 : 앞뒤 int라 결과값도 int가 됨
+		  // int 산술연산자 in -> 결과는 int
+		  // int 산술연산자 double -> 결과는 double
+		  // double 산술연산자 int -> 결과는 double
+		  //
+		  System.out.println(100/200.0);
+		  System.out.println(100.0/200.0);
+		  System.out.println(100%200);
+	}
+
+}

@@ -1,0 +1,19 @@
+package day0529.loop;
+
+public class Quiz12 {public static void main(String[] args) {
+	int evenSum = 0; //Â¦¼öÇÕ
+	int oddSum = 0;  //È¦¼öÇÕ
+	for (int i =1;i<=10 ;i++) {
+		if (i %2==0) {
+			evenSum+=i;			
+		}else { oddSum+=i;}
+		
+	}
+	System.out.println("Â¦¼öÇÕ :" + evenSum);
+	System.out.println("È¦¼öÇÕ :" + oddSum);
+	System.out.println("ÀüÃ¼ÇÕ :"+ evenum + oddSum);
+	
+	
+}
+
+}

@@ -1,0 +1,20 @@
+package superTest;
+
+public class Sun extends SuperMom{
+	
+	public Sun() {
+		super(5,0,50,30);
+		
+	}
+	public void Data() {
+		System.out.println("아들");
+		System.out.println("상태창");
+		System.out.println("레벨 : " + level);
+		System.out.println("경험치 : " + exp);
+		System.out.println("체력 : " + hp);
+		System.out.println("마력 : " + mp);
+		System.out.println("----------------");
+	}
+
+	
+}

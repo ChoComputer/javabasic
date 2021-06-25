@@ -1,0 +1,33 @@
+package day0529.ifswitch;
+
+import java.util.Scanner;
+
+public class Test03 {public static void main(String[] args) {
+	
+	/*
+	 * if (참 또는 거짓){
+	 * 참일경우
+	 * } else{
+	 * 거짓일경우
+	 * }
+	 * 
+	 * if (참 또는 거짓){
+	 * 참일경우
+	 * } else if (참 또는 거짓){
+	 *  else if 가 참일경우 -요건 계속 넣을수있음
+	 * }
+	 *    .
+	 *    .
+	 *    .  
+	 *  else {
+	 *   위의  if들이 다 아닐경우
+	 * }
+	 * 
+	 * 
+	 * 
+	 */
+	
+	System.out.println();
+}
+
+}

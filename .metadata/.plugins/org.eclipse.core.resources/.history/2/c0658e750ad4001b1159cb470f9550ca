@@ -1,0 +1,18 @@
+package accessmodifier2;
+
+
+
+
+
+
+
+public class Child extends Parent {
+	
+	public int c;     // 여기서 이것만 선언하면 Main에서 출력해보면 3이아닌 0임 
+	
+	public Child() {
+		this.c=9;
+	}
+	
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;polymorphism.Polymorphism&apos; to &apos;Person&apos;&#x0D;&#x0A;- Original project: &apos;10-javaoop&apos;&#x0D;&#x0A;- Original element: &apos;polymorphism.Polymorphism&apos;&#x0D;&#x0A;- Renamed element: &apos;polymorphism.Person&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Polymorphism&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;polymorphism{Polymorphism.java[Polymorphism" matchStrategy="1" name="Person" qualified="false" references="true" similarDeclarations="false" stamp="1624592254758" textual="false" version="1.0"/>
+</session>

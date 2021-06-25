@@ -1,0 +1,11 @@
+package polymorphism;
+
+public class Utuber extends Person{
+	
+	private Stirng personCount;
+	
+	public Utuber(String name,int age, String personCount) {
+		super("유튜버",20,"80만")
+	}
+
+}

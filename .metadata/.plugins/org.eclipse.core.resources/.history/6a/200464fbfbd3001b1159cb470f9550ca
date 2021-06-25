@@ -1,0 +1,27 @@
+package date210623.method;
+
+public class Test {
+
+//	private int height;
+//	private int weight;
+	private int height=175;
+	private int weight=64;
+	
+
+	public Test(int h,int w) {
+		this.height =h;
+		this.weight=w;
+	}
+	
+	public void getBMI() {
+          
+		System.out.println(this.weight/(this.height*0.01));
+	                      // 그냥 h w로 하면안된다.
+	}
+	public double sosoBMI() {
+		
+		return (this.weight/(this.height*0.01));
+		
+	}
+
+}

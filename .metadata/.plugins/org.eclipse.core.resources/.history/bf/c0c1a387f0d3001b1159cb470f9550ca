@@ -1,0 +1,24 @@
+package date210623.method;
+
+public class MethodBonus01 {
+	
+	//return 구문은 실행 즉시 메서드를 종료시킴
+	//단, 자바에서는 return 아래쪽에 코드를 적는것만으로도
+	//컴파일러가 문법오류로간주
+	//리턴 오른쪽에 배달할 코드 가 들어감 ,없어도되긴함
+	public static void returnTest() {
+
+		System.out.println("리턴구문 위쪽");
+		if(true) {
+		return;
+//		System.out.println("리턴구문 아래쪽"); //오류뜸
+		}
+		System.out.println("리턴구문 아래쪽"); //이건 가능
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

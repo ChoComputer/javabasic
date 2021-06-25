@@ -1,0 +1,8 @@
+package day0529.ifswitch;
+
+public class Test04 {
+	public static void main(String[] args) {
+		int a =10;
+		System.out.printf("--%d--\n",a);	}
+
+}

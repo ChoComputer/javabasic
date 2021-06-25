@@ -1,0 +1,27 @@
+package superTest;
+
+public class SuperMom {
+
+	
+	
+	private int level =50;
+	private int exp =0;
+	private int hp =99999;
+	private int mp =99999;
+	
+
+	public SuperMom(int level,int exp, int hp, int mp) {
+		
+		this.level=level;
+		this.exp=exp;
+		this.hp=hp;
+		this.mp=mp;
+		
+				
+	}
+	
+	
+	
+	
+
+}

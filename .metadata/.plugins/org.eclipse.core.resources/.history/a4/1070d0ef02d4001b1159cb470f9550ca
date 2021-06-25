@@ -1,0 +1,30 @@
+package superTest;
+
+public class SuperMom {
+
+
+	public SuperMom(int level, int exp, int hp, int mp) {
+
+		this.level = level;
+		this.exp = exp;
+		this.hp = hp;
+		this.mp = mp;
+
+	}
+	
+	public SuperMom() {
+		private int level = 50;
+		private int exp = 0;
+		private int hp = 99999;
+		private int mp = 99999;
+		
+	}
+
+	public void Data() {
+		System.out.println("레벨 : "+level);
+		System.out.println("경험치 : "+exp);
+		System.out.println("체력 : "+hp);
+		System.out.println("마력 : "+mp);
+	}
+
+}

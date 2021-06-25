@@ -1,0 +1,14 @@
+package polymorphism;
+
+// 부모 클래스를 Person으로 가지는 클래스
+public class Student extends Person {
+
+	private int grade;
+	
+	public Student(String n, int ag) {
+		
+		super("아들인학생", 19);
+	
+	}
+
+}

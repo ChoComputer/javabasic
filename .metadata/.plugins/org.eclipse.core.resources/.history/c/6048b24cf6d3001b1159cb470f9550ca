@@ -1,0 +1,11 @@
+package date210623.method;
+
+public class Main {
+	public static void main(String[] args) {
+		Person p1 =new Person(10000,0);
+		
+		// 과일을 하나 사고 1000원 차감하는 setter
+		p1.buyFriut();
+	}
+
+}

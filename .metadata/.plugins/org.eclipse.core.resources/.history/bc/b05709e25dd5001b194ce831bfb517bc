@@ -1,0 +1,15 @@
+package interaction.game.t;
+
+public class Goul {
+	private int hp;
+	private int atk;
+	private int def;
+	
+	
+	public Goul() {
+		hp=8;
+		atk=2;
+		def=1;
+	}
+
+}

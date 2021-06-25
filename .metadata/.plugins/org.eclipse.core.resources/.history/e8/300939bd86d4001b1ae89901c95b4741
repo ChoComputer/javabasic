@@ -1,0 +1,24 @@
+package accessmodifier.game;
+
+import java.awt.Container;
+
+public class ProtectedWarrior extends ProtectedCommoner {
+
+//	public ProtectedWarrior(String id) {
+//
+//		this.hp = 40;
+//		this.mp = 20;
+//		this.level = 5;
+//		this.exp = 0;
+//	}
+
+	public void doubleAttack() {
+		if (mp - 2 > 0) {
+			System.out.println("전사가 더블어택을 사용합니다.");
+			mp -= 2;
+			exp += 15;
+		} else {
+			System.out.println("마나가 부족하여 스킬이 취소됩니다.");
+		}
+	}
+}

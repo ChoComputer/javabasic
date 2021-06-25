@@ -1,0 +1,15 @@
+package accessmodifier.game;
+
+public class ProtectedMain1 {
+	public static void main(String[] args) {
+		ProtectedWarrior w=new ProtectedWarrior();
+		w.getAllData();
+		w.hunt();
+		w.doubleAttack();
+		
+		
+		
+		
+	}
+
+}

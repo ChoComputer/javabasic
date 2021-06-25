@@ -1,0 +1,12 @@
+package superclass;
+
+public class Main1 {
+	public static void main(String[] args) {
+		
+		Airplane a1=new Airplane();
+			
+			
+		
+	}
+
+}
