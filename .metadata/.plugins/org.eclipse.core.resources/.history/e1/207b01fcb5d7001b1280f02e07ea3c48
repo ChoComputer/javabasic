@@ -2,7 +2,7 @@ package polymorphism.game;
 
 public class Goul extends Monster{
 	public Goul() {
-		super("Goul",5,5,3);
+		super(6,5,3,1);
 	}
 
 }

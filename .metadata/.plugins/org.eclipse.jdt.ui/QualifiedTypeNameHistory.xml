@@ -20,5 +20,11 @@
 <fullyQualifiedTypeName name="accessmodifier.game.ProtectedMagician"/>
 <fullyQualifiedTypeName name="accessmodifier.game.ProtectedCommoner"/>
 <fullyQualifiedTypeName name="interaction.game.Commoner"/>
+<fullyQualifiedTypeName name="interaction.game.t.Archer"/>
+<fullyQualifiedTypeName name="polymorphism.Utuber"/>
+<fullyQualifiedTypeName name="polymorphism.FoodFighter"/>
+<fullyQualifiedTypeName name="overloading.OverTest"/>
+<fullyQualifiedTypeName name="polymorphism.game.Monster"/>
+<fullyQualifiedTypeName name="polymorphism.game.Orc"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 </qualifiedTypeNameHistroy>

@@ -5,14 +5,13 @@ public class Main {
 		
 		Archer a1=new Archer();
 		Monster o=new Orc();
-		Monster g=new Goul();
-		a1.hunt(g);
-		a1.hunt(g);
-		a1.hunt(g);
-		a1.hunt(g);
-		a1.hunt(g);
+		a1.hunt(o);
+		a1.hunt(o);
+		a1.hunt(o);
+		a1.hunt(o);
+		a1.hunt(o);
 		a1.showData();
-		g.showM();
+		o.showM();
 		
 		
 		

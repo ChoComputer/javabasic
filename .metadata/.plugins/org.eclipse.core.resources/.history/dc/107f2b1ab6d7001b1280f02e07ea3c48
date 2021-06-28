@@ -12,7 +12,7 @@ public class Main {
 		a1.hunt(g);
 		a1.hunt(g);
 		a1.showData();
-		g.showM();
+		o.showM();
 		
 		
 		
