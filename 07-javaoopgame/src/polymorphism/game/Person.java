@@ -9,6 +9,7 @@ public class Person {
 	private int lv;
 	private int exp;
 	private int count;
+	
 
 	public Person(String id,int hp,int mp, int atk,int def, int lv, int exp) {
 		this.id =id;
@@ -21,9 +22,11 @@ public class Person {
 	}
 
 	public void hunt(Monster M) {
-		int d=(int) (Math.random() * 10);
-		this.atk=d;
-
+		int d = (int) (Math.random() * this.atk);
+		this.atk = d;
+		int r = (int) (Math.random() * M.getAtk());
+		M.setAtk(r);
+		
 		if (M.getHp() <= 0) {
 			System.out.println("시체잖아?사냥감을 찾아라..");
 			return;
@@ -44,8 +47,11 @@ public class Person {
 		}
 
 		if (this.hp > 0 && M.getHp() > 0) {
-
-			this.hp = (this.hp + this.def) - M.getAtk();
+			
+			if(M.getAtk()>this.def) {
+			this.hp = (this.hp + this.def) - M.getAtk();}else{
+				this.hp=this.hp;
+			}
 
 			System.out.println(M.getId() + "이(가) ((" + (M.getAtk() - this.def) + "))의 대미지를 주었다.");
 			if (this.atk <= M.getDef()) {

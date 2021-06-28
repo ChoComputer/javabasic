@@ -1,6 +1,10 @@
 package static1;
 
 public class StaticTest {
+	// main이 생기기전에 만들어 지는 거임! 힙에 강제적으로 우선적으로 만들어짐! 
+	//생성자가 만들어지기 전부터  만들어짐
+	
+	
 	// static이 안 붙은 변수는 객체가 개별적으로 가지는 변수입니다.
 	// 딴공간에서 바꿔도 그 바꾼 공간에만 적용됨
 	public int num1;

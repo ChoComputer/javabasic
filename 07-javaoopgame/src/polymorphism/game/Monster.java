@@ -16,8 +16,6 @@ public class Monster {
 	}
 
 	public void dobattle(int uatk) {
-		int r=(int) (Math.random() * this.atk);
-		this.atk=r;
 		if (uatk > this.def) {
 			this.hp = this.hp + this.def - uatk;
 		}

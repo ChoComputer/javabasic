@@ -11,13 +11,11 @@ public class Warrior extends Person{
 	private int count;
 
 	public Warrior() {
-		super("전사",30,8,0,3,1,0);
-		
+		super("전사",30,8,10,3,1,0);
 	}
 
 	public void hunt(Monster M) {
-		int d = (int) (Math.random() * 10);
-		this.atk = d;
+		
 		super.hunt(M);
 		
 		

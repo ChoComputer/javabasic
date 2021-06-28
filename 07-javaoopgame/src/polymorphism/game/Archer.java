@@ -10,11 +10,10 @@ public class Archer extends Person {
 	private int count;
 
 	public Archer() {
-		super("궁수",20,15,0,1,1,0);
+		super("궁수",20,15,8,1,1,0);
 	}
 	public void hunt(Monster M) {
-		int d = (int) (Math.random() * 8);
-		this.atk = d;
+	
 		super.hunt(M);
 		
 	}

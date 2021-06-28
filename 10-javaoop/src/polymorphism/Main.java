@@ -20,6 +20,8 @@ public class Main {
 		Person f1 = new FoodFighter("먹짱", 23, "햄버거");
 
 		f1.showPerson(); 
+		
+		
 	}
 
 }
