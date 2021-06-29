@@ -9,10 +9,10 @@ public class Animal {
 		this.name=name;
 		this.age=age;
 	}
-	// 동물 행동르 하나 아무거나 메서드로 만들어 주세요
+	// 동물의 행동을  아무거나 메서드로 만들어 주세요
 	
 	public void sit() {
-		System.out.println("앉아!!");		
+		System.out.println("앉아!!");
 		System.out.println("-----------------");		
 	}
 	

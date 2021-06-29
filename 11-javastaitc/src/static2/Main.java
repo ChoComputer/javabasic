@@ -1,4 +1,4 @@
-package Static2;
+package static2;
 
 public class Main {
 	public static void main(String[] args) {
@@ -10,7 +10,6 @@ public class Main {
 		Asean a2=new Asean(30,30,30);
 		Asean a3=new Asean(40,40,40);
 		Asean a4=new Asean(50,50,50);
-				
 		
 		a1.showAseanIfo();
 		a2.showAseanIfo();

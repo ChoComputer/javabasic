@@ -24,7 +24,11 @@
 <fullyQualifiedTypeName name="polymorphism.Utuber"/>
 <fullyQualifiedTypeName name="polymorphism.FoodFighter"/>
 <fullyQualifiedTypeName name="overloading.OverTest"/>
-<fullyQualifiedTypeName name="polymorphism.game.Monster"/>
 <fullyQualifiedTypeName name="polymorphism.game.Orc"/>
+<fullyQualifiedTypeName name="polymorphism.game.Monster"/>
+<fullyQualifiedTypeName name="java.lang.AbstractMethodError"/>
+<fullyQualifiedTypeName name="casting.Animal"/>
+<fullyQualifiedTypeName name="static1.StaticTest"/>
+<fullyQualifiedTypeName name="Static2.Asean"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 </qualifiedTypeNameHistroy>

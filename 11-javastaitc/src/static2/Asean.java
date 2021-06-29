@@ -1,4 +1,4 @@
-package Static2;
+package static2;
 
 public class Asean {
 	// 중간 고사 기말고사 출석 조별과제 점수를 변수로 정의

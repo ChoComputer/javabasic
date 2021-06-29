@@ -16,9 +16,8 @@ public class Array { public static void main(String[] args) {
 	System.out.println(b); // 5,6,7,8, 이 b에 들어감
 	
 	// 배열의 생성 (길이 확정) // 전부 0으로 채워진다
-	int[] c =new int[8];  //길이만 정할 수있다 8칸짜리로 만들겠다는것임 0000 0000 임
+	int[] c =new int[8];//길이만 정할 수있다 8칸짜리로 만들겠다는것임 0000 0000 임
 	System.out.println(c);
-	
 	// 배열의 길이는 .length로 알 수 있습니다.
 	System.out.println(a.length);
 	System.out.println(b.length);

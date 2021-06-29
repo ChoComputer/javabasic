@@ -15,7 +15,7 @@ public class StaticTest {
 	public static int num2 =0;
 	
 	public StaticTest() {
-		this.num1=5;
+		this.num1 =5;
 		num2+=1;
 		System.out.println("num1변수는 수치가 변하지 않습니다. : "+num1);
 		System.out.println("현재 가입자수는 "+num2+"명 입니다.");

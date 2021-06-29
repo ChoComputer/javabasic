@@ -7,7 +7,7 @@ public class DataString {
 		 * String을 사용합니다.
 		 */
 		byte a = 'a'; // 영어 대소문자는 총 52개 1byte로 표현 가능 0 == 48 / A == 65 / a == 97 / Enter = 13
-		// char a = 'a';
+//		 char a = 'a';
 		String b = "문자열입니다.";
 //		char c = "문자열"; // 문자열과 단일문자는
 //		String d = 'd'; // 서로 다른 자료형으로 간주됨

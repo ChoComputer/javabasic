@@ -19,14 +19,14 @@ public class Person {
 		this.def = def;
 		this.lv = lv;
 		this.exp = exp;
+		int d = (int) (Math.random() * this.atk);
+		this.atk = d;
+		
 	}
 
 	public void hunt(Monster M) {
-		int d = (int) (Math.random() * this.atk);
-		this.atk = d;
 		int r = (int) (Math.random() * M.getAtk());
 		M.setAtk(r);
-		
 		if (M.getHp() <= 0) {
 			System.out.println("시체잖아?사냥감을 찾아라..");
 			return;

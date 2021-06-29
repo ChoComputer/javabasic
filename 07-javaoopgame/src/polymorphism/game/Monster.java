@@ -15,7 +15,7 @@ public class Monster {
 		this.exp = exp;
 	}
 
-	public void dobattle(int uatk) {
+	public void dobattle(int uatk){
 		if (uatk > this.def) {
 			this.hp = this.hp + this.def - uatk;
 		}

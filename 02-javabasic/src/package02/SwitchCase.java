@@ -15,7 +15,7 @@ public class SwitchCase {
 		// 와 같이 작성합니다. 
 		// 마지막에 default 문을 작성시 if~else문의 else처럼 기능함
 		
-		int a=2;
+		int a=3;
 		switch(a) {
 		case 1:
 			System.out.println("one");

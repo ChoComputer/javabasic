@@ -27,7 +27,7 @@ public class Main {
 		//근본이 Animal인 경우는 다른 타입으로 변형이 안됨
 		Cat cat2=(Cat)a;
 		cat2.Jump();   //오류가 안떠 되는것같지만 출력하면 오류뜸
-		c.sit();    // 이건 안됨 변형이 안된다 Animal은 애당초 캣을 가질수가없음 
+		c.sit();    // 이건 안됨 변형이 안된다 Animal은 애당초 캣을 가질수가없음 cat을 다 바꾸는듯
 		
 
 	}
