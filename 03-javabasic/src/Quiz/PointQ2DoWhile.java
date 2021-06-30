@@ -6,7 +6,7 @@ public class PointQ2DoWhile {
 	public static void main(String[] args) {
 		// 여러분들이 배달 어플을 만들었습니다.
 		// 이 어플은 주문금액을 입력받습니다.
-		// 주문금액은 Scanner를 이요하여 order변수에 직접 입력을 받습니다.
+		// 주문금액은 Scanner를 이용하여 order변수에 직접 입력을 받습니다.
 		// 단, do while로 작성하여 첫 주문금액이 15000미만 이어도
 		// "배달을 완료했습니다." 라고 출력 후
 		// 다시 주문금액을 입력 받는 로직을 반복문 내부에 작성하여주세요

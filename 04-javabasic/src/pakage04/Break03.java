@@ -11,9 +11,9 @@ public class Break03 {
 		// 으로 호출하면 상위 반복문도 종료됨
 
 		// 바깥족 반복문에 outter 이라는 라벨은 붙임
-		for (int i = 2; i <= 9; i++) {
+		outter:	for (int i = 2; i <= 9; i++) {
 			System.out.println(i + "단 출력.");
-			outter: for (int j = 1; j <= 9; j++) {
+			 for (int j = 1; j <= 9; j++) {
 				if (j > 5) {
 					System.out.println(i + "*6이상은 직접 알아보기");
 					break outter;

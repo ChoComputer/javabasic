@@ -3,7 +3,7 @@ package Package01;
 public class Casting {
 	public static void main(String[] args) {
 		/*
-		 * 데이터의 크기 byte(1) < short(2) < int(4) < long(8) < float(4) < double(8) 강제 형 변환
+		 * 데이터의 크기 byte(1) < short(2) < int(4) < long(8) [여기까지 자료형 정수표현]    <    float(4) < double(8) [얘네둘은 실수 자료형]  // 강제 형 변환
 		 * 서로 다른 자료형 간에는 원래 연산이 불가능함. 
 		 * 그렇지만 편의상 컴퓨터가 자동으로 자료형을 
 		 * 보정하여 주는 경우가 있는데 이것을 자료형 변환이라고 함 

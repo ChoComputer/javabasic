@@ -7,8 +7,8 @@ public class Break01 {
 		// break 문이 속해있는 영역까지만 종료시킵니다.
 		
 		int a=1;
-		int [] arr = {9,8,7,6,1,2,3,4,5,};
-		
+		int [] arr =new int [8];       //{9,8,7,6,1,2,3,4,5,};
+		arr[5]=1;
 		for(int num:arr) {
 			if(a==num) {
 				System.out.println("1이 나와서 종료함");

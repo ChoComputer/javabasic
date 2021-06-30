@@ -10,7 +10,7 @@ public class EnhancedForLoop01 {
 		for (int a : arr1) {
 			System.out.println(a);
 		}  
-		// 위 아래 동일한 구문임  but 위는 a에 100 211 339 475 가 다이렉트로 들어간다는의미  밑의 arr1[i]는 i에 0~ 이런 개들어가는거임
+		// 위 아래 동일한 구문임  but 위는 a에 100 211 339 475 가 다이렉트로 들어간다는의미  밑의 arr1[i]는 i에 0~ 이런것들이 들어가는거임
 		
 		System.out.println("------------------");
 		

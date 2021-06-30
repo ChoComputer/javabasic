@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class PointQ6star {
 	public static void main(String[] args) {
 		// Scanner 로 정수를 입력 받게 해주세요
-		// 입력받은 정수의 제곱형태의 직 사각형이 찍히도록 중첩 반복문 작성
+		// 입력받은 정수의 제곱형태의 정사각형이 찍히도록 중첩 반복문 작성
 		// 예시3입력시
 		// ***
 		// ***

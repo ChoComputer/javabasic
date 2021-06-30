@@ -19,7 +19,7 @@ public class Mission {
 		
 		for (int j =0; j<6;j++) {
 			int c = (int) (Math.random() * 45)+1;
-			for( c ==  c) {
+//			for( c ==  c) {
 			
 				
 			}
@@ -37,4 +37,3 @@ public class Mission {
 		
 	}
 	
-}
