@@ -16,8 +16,9 @@ public class String5 {
 		String str= sc.nextLine();
 		
 		for(int i =0; i< str.length();i++) {
-			char get = str.charAt(i);
-			System.out.println(get);
+//			char get = str.charAt(i);
+//			System.out.println(get);
+			System.out.println(str.charAt(i));   // 두개 하나로 이게 편함	
 		}
 		
 		
