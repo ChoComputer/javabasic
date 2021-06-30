@@ -6,6 +6,7 @@ public class String1 {
 		String greeting = "Hello Java";
 		char get = greeting.charAt(6);
 		System.out.println(get);
+		System.out.println(greeting.charAt(7));
 		
 		// System.out.println(greeting[6]); //문자열은 인덱싱이 안됨 자바에서만 안됨
 		

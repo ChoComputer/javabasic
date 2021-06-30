@@ -23,7 +23,7 @@ public class String3 {
 		boolean bool = true;
 		
 		// 마지막 으로 발견된 지점
-		int fidx = -1;
+		int fidx = -1;  // 내가 풀이한 for 문의 i 변수의 역활 임
 		
 		while(bool) {
 			int get =all.indexOf(voca,fidx+1);
