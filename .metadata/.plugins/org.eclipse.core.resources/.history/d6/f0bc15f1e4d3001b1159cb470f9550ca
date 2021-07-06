@@ -1,7 +1,0 @@
-package accessmodifier.game;
-
-import inheritance.game.Commoner;
-
-public class ProtectedMagician extends ProtectedCommoner {
-
-}

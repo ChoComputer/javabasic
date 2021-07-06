@@ -13,6 +13,7 @@ public class Main {
 		d.sit();
 		c.sit();
 		c.hand();
+
 		
 	//	c.jump();   // 이상황 에서는 자식만의 고유 메소드는 호출 불가능
 //		d.bowWow();
