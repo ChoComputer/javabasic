@@ -18,16 +18,25 @@ public class Lotto1 {
 		Random r = new Random();
 		List<Integer> lottoList = new ArrayList<>();
 		
+		//선생님풀이
+		int getNum;
+		while(lottoList.size() !=6) {
+			getNum=(int)(Math.random()*45)+1;
+			if(!lottoList.contains(getNum)) {  //! 를통해 컨테인즈에 안들어있을때 트루인걸 flase로 만들어서 컨테인즈로 확인하여 공간이 빌때 !로 트루로 해서 중복을막고 넣음
+				lottoList.add(getNum);
+			}
+		} Collections.sort(lottoList);
+		System.out.println(lottoList);
 
-		for (int i = 0; i < 6; i++) {
-
-			int lottoNum = r.nextInt(45) + 1;
-			lottoList.add(lottoNum);
-
-		}
-		Collections.sort(lottoList);
-		System.out.println("추첨번호 : "+lottoList);
-		System.out.println("2등 당첨 번호 : "+(r.nextInt(45)+1));
+//		for (int i = 0; i < 6; i++) {
+//
+//			int lottoNum = r.nextInt(45) + 1;
+//			lottoList.add(lottoNum);
+//
+//		}
+//		Collections.sort(lottoList);
+//		System.out.println("추첨번호 : "+lottoList);
+//		System.out.println("2등 당첨 번호 : "+(r.nextInt(45)+1));
 
 	}
 

@@ -15,7 +15,7 @@ public class String10 {
 		// String.valueOF() 를 쓰지 않고도
 		// + "" 만으로 문자열화 시퀘
 		// 자바는 문자열 + 다른자료형을 할 경우 다른자료들도 전부 문자열화 시켜줌
-		String c=100+"";
+		String c=100 + "";
 		System.out.println(c);
 		System.out.println(c+1);
 		
