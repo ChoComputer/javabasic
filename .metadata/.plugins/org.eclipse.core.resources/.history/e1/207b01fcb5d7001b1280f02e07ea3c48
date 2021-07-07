@@ -1,8 +1,0 @@
-package polymorphism.game;
-
-public class Goul extends Monster{
-	public Goul() {
-		super(6,5,3,1);
-	}
-
-}

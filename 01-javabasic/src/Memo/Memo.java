@@ -11,6 +11,7 @@ public class Memo {
 		 * 
 		 *(검색해봐) float 표현 범위 ascii 코드 https://swpfun.tistory.com/587 uni코드 
 		 *https://edmblackbox.tistory.com/149
+		 *영어 대소문자는 총 52개 1byte로 표현 가능 0 == 48 / A == 65 / a == 97 / Enter = 13
 		 */
 		
 		System.out.print("hihi ");
