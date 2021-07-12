@@ -12,7 +12,7 @@ public class ArrayList1 {
 		//<> 제네릭 방식
 
 		// 정수 자료를 받을 수 있는 리스트 생성(길이 가변적)
-		List<Integer> list1 = new ArrayList<>();  // 컬렉션이라 부름 제네릭을 이용해서 자료저장하는걸
+		List<Integer> list1 = new ArrayList<>();  // 컬렉션이라 부름 제네릭<>을 이용해서 자료저장하는걸
 
 		list1.add(1);
 		list1.add(2);
