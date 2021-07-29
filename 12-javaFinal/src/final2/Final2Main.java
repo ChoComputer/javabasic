@@ -20,6 +20,10 @@ public class Final2Main {
 		
 		System.out.println(WARRIOR_HP);
 		System.out.println(MONSTER_EXP);
+		
+		
+		
+		
 	}
 
 }

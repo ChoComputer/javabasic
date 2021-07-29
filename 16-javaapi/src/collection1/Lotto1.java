@@ -22,7 +22,8 @@ public class Lotto1 {
 		int getNum=0;
 		while(lottoList.size() !=6) {
 			getNum=(int)(Math.random()*45)+1;
-			if(!lottoList.contains(getNum)) {  //! 를통해 컨테인즈에 안들어있을때 트루인걸 flase로 만들어서 컨테인즈로 확인하여 공간이 빌때 !로 트루로 해서 중복을막고 넣음
+			if(!lottoList.contains(getNum)) {  
+				//! 를통해 컨테인즈에 안들어있을때 트루인걸 flase로 만들어서 컨테인즈로 확인하여 공간이 빌때 !로 트루로 해서 중복을막고 넣음
 				lottoList.add(getNum);
 			}
 		} Collections.sort(lottoList);   // 이거 없으면 순서까지 맞춰야하는거임 번호만 맞추는거 뿐만 아니라

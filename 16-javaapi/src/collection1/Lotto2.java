@@ -16,7 +16,7 @@ public class Lotto2 {
 		System.out.println("주소값 비교 : "+(l1==l2));
 		System.out.println("내부 요소간 비교 : "+(l1.equals(l2)));
 		
-		// l1 과 l2에 각각 요소 입력하되, 순서에 따른 겨과 확인
+		// l1 과 l2에 각각 요소 입력하되, 순서에 따른 결과 확인
 		l1.add(1);
 		l1.add(2);
 		l2.add(2);
