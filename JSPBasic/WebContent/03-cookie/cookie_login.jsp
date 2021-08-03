@@ -1,14 +1,23 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%
+    Cookie[] cookies = request.getCookies();
     // 로그인 창 만든 이후에 이미 로그인한 사람이 로그인창으로 오면
     // 바로 로그인 완료창으로 보내주기 위해 작성할 부분입니다.
     // "user_id" 쿠키 존재 여부를 따져서 리다이렉트 시킵니다.
+	// cookie_welcome.jsp로 리다이렉트 시켜주세요.
+	for(Cookie c : cookies){
+		String cookieName = c.getName();
+		if(cookieName.equals("user_id")){
+			response.sendRedirect("cookie_welcome.jsp");
+			// break  -> 실행된는 경우가 없음  response가 보내버려서 어차피 실행 안됨
+		}
+	}
+    
     
     // 만약 아이디/비밀번호 기억하기가 체크되어 있는경우
     // 처리해주기 위해 쿠키에서 아이디/비밀번호 값을 추출하는 로직
     // 추출한 아이디 , 비밀번호를 콘솔창에 찍어주기
-    Cookie[] cookies = request.getCookies();
     String userId="";
     String userPw="";
     // cookies 변수에 쿠키가 여러개 들어있음

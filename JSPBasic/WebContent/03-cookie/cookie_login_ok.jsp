@@ -47,7 +47,8 @@
 		//pw체크박스
 		if(checkPw!=null &&checkPw.equals("yes")){
 			Cookie pwMemory=new Cookie("remember_pw",pw);
-			pwMemory.setMaxAge(20);
+			pwMemory.setMaxAge(20); 
+			// 0 넣으면 없는거나 만찬가지 없어짐 삭제임  response.addCookie(pwMemory) 이랑 세트임 그래야 적용됨
 			response.addCookie(pwMemory);
 		}
 		
