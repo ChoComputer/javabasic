@@ -11,8 +11,8 @@
 	    보내는 input 태그의 name 속성은 컬럼명과 일치 시켜 주세요.	 -->
 	    <h1>회원가입 창입니다.</h1>
 	<form action="user_join.jsp" method="post">
-		<input type="text" name="uid" placeholder="id"> <br/>
-		<input type="password" name="upw" placeholder="pw"> <br/>
+		<input type="text" name="uid" placeholder="id" required> <br/>
+		<input type="password" name="upw" placeholder="pw" required> <br/>
 		<input type="text" name="uname"placeholder="name"> <br/>
 		<input type="email" name="email" placeholder="eamil"><br/>
 		<input type="submit" value="제출">
