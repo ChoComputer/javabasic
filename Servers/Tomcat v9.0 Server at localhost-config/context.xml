@@ -26,4 +26,16 @@
     <!--
     <Manager pathname="" />
     -->
+    
+    <!--  
+    	아래 코드를 이용해 커넥션 풀 설정을 합니다.
+    	driverClassName = " Class.forName(); 역학
+    	url = getConnection(URL , DBID, DBPW) 중
+    	url=URL 역활
+    	username = DBID 역활
+    	password = DBPW 역활
+    	maxActive = 최대 dao갯수
+    	maxWait = 최대 대기 시간 ( 밀리초 (1/1000) , 접속자가 대기시간 오버시 갯수 증가)
+     -->
+       <Resource auth="Container" driverClassName="com.mysql.cj.jdbc.Driver" maxActive="300" maxWait="1000" name="jdbc/mysql" password="mysql" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/ict03" username="root"/>
 </Context>

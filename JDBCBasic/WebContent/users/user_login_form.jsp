@@ -19,7 +19,7 @@
 		<input type="text" name="uid" placeholder="id"><br/>
 		<input type="password" name="upw" placeholder="pw"><br/>
 		<input type="submit" value="로그인"><br/>
-		
+		<a href="user_get_all.jsp">전체회원목록 링크</a><br/>
 		<a href ="user_join_form.jsp">회원가입</a>
 		
 	</form>

@@ -1,5 +1,5 @@
-<%@page import="kr.co.ictedu.UsersVO"%>
 <%@page import="kr.co.ictedu.UsersDAO"%>
+<%@page import="kr.co.ictedu.UsersVO"%>
 <%@page import="java.sql.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>

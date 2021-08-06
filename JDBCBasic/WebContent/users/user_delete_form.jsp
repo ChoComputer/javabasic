@@ -19,7 +19,7 @@
 <body>
  	<h2> <%=sessionId %> 회원 탈퇴를 진행합니다. 비밀번호를 한번더 입력해주세요</h2>
 	<form action ="user_delete_ok.jsp" method="post">
-			<input type="password" name="pw" placeholder="비밀번호"><br/>
+			<input type="password" name="dpw" placeholder="비밀번호"><br/>
 			<input type="submit" value="제출">
 	</form>
 

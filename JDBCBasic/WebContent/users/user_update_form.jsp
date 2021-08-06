@@ -1,5 +1,5 @@
-<%@page import="kr.co.ictedu.UsersVO"%>
 <%@page import="kr.co.ictedu.UsersDAO"%>
+<%@page import="kr.co.ictedu.UsersVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%
@@ -21,6 +21,7 @@
     	// 3. 들고온 UsersVO를 통해 아래 html태그의 value속성에
     	//	  UsersVO의 아이디 , 이름 , 이메일을 기입하게 만들어 줍니다.
     	UsersVO resultData=dao.getUserInfo(user);
+    	System.out.println("DB에서 가져온 데이터 :" + resultData);
     	
     	
     	if(resultData.getUid()==null){
@@ -36,9 +37,9 @@
 </head>
 <body>
 	<form action="user_update_ok.jsp" method="post">
-		<input type="text" name="id" value="<%=resultData.getUid() %>" readonly="true"><br/> <%-- disable는 모이기만하고 전송 ㄴㄴ --%>
-		<input type="password" name="pw" placeholder="pw"><br/>
-		<input type="text" name="name" value="<%= resultData.getUname() %>"><br/>
+		<input type="text" name="id" value="<%=resultData.getUid() %>" readonly required><br/> <%-- disable는 모이기만하고 전송 ㄴㄴ --%>
+		<input type="password" name="pw" placeholder="pw" required><br/>
+		<input type="text" name="name" value="<%= resultData.getUname() %>" required><br/>
 		<input type="email" name="email" value="<%= resultData.getEmail() %>"><br/>
 		<input type="submit" value ="수정" ><br/>
 		

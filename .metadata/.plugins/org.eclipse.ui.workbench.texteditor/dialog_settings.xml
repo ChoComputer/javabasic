@@ -10,7 +10,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value="user"/>
 		<list key="findhistory">
+			<item value="user"/>
 			<item value="`"/>
 			<item value="&#x09;&#x09;System.out.println();"/>
 		</list>

@@ -1,5 +1,5 @@
-<%@page import="kr.co.ictedu.UsersVO"%>
 <%@page import="kr.co.ictedu.UsersDAO"%>
+<%@page import="kr.co.ictedu.UsersVO"%>
 <%@page import="java.sql.*"%>
 <%@page import="java.sql.SQLException"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -29,7 +29,7 @@
 		user.setUid(uid);
 		user.setUpw(upw);
 		
-		int loginResultNum=dao.loginUser(user);
+		int loginResultNum = dao.usersLogin(user);
 		System.out.println("결과코드 : "+loginResultNum);
 		
 		if(loginResultNum==1){
@@ -55,6 +55,7 @@
 	<a href="user_logout.jsp">로그아웃 하기</a><br/>
 	<a href="user_update_form.jsp">회원정보수정</a>
 	<a href="user_delete_form.jsp">회원탈퇴</a><br/>
+	<a href="user_get_all.jsp">전체회원목록 링크</a><br/>
 	
 
 </body>
