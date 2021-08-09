@@ -19,6 +19,7 @@
   // VO객체 생성 및 uid, uname, email setter 로 입력하기 컨트롤 스페이스 임포트!!
   UsersVO user = new UsersVO(uid, upw, uname, email); // 위의 변수 와 같은 변수여야함
   dao.joinUsers(user);
+  
 %>
 
 <!DOCTYPE html>

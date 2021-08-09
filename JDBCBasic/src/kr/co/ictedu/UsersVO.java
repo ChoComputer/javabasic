@@ -15,7 +15,7 @@ public class UsersVO {
 	private String email;
 
 	// Alt + Shift + S 혹은 마우스 우클릭 source에서있는 메뉴 사용
-	// VO 클래스는 기본생성자와 모든 멤버 변수를 초기화 하는 생성자를 선언
+	// VO 클래스는 기본생성자와 모든 멤버 변수를 <<<초기화>>> 하는 생성자를 선언
 	public UsersVO() {
 		// 기본 생성자는 직접 작성
 		
