@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="accessmodifier2.Child"/>
-<fullyQualifiedTypeName name="accessmodifier2.Parent"/>
-<fullyQualifiedTypeName name="inheritance.game.Commoner"/>
 <fullyQualifiedTypeName name="accessmodifier.game.Commoner"/>
 <fullyQualifiedTypeName name="date210623.method.Person"/>
 <fullyQualifiedTypeName name="superTest.SuperMom"/>
@@ -55,9 +52,12 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="kr.co.ictedu.UsersVO"/>
 <fullyQualifiedTypeName name="javax.activation.DataSource"/>
-<fullyQualifiedTypeName name="javax.naming.spi.InitialContextFactory"/>
-<fullyQualifiedTypeName name="javax.sql.DataSource"/>
 <fullyQualifiedTypeName name="com.sun.xml.internal.bind.CycleRecoverable.Context"/>
-<fullyQualifiedTypeName name="javax.naming.InitialContext"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.sql.Timestamp"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
 <fullyQualifiedTypeName name="javax.naming.Context"/>
+<fullyQualifiedTypeName name="javax.naming.spi.InitialContextFactory"/>
+<fullyQualifiedTypeName name="javax.naming.InitialContext"/>
 </qualifiedTypeNameHistroy>
