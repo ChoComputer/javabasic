@@ -1,9 +1,8 @@
 package kr.co.ictedu.board.model;
 
-import java.awt.List;
 import java.sql.*;
 import java.util.ArrayList;
-
+import java.util.List;
 import javax.naming.*;
 import javax.sql.DataSource;
 
@@ -77,9 +76,9 @@ public class BoardDAO {
 	} // write 끝
 
 	// 모든게시글의 정보를 DB로부터 얻어올 메서드
-	public ArrayList<BoardVO> getBoardList() {
+	public List<BoardVO> getBoardList() {
 		// 내부에서 사용할 변수 선언
-		ArrayList<BoardVO> boardList = new ArrayList<>();
+		List<BoardVO> boardList = new ArrayList<>();
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -136,8 +135,8 @@ public class BoardDAO {
 			pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, bId);
 			rs = pstmt.executeQuery();
-			
-			if(rs.next()){
+
+			if (rs.next()) {
 				board.setbId(rs.getInt("bid"));
 				board.setbName(rs.getString("bname"));
 				board.setbTitle(rs.getString("btitle"));
@@ -166,4 +165,78 @@ public class BoardDAO {
 		return board;
 	}// end getdetail
 
+	// 글삭제 로직
+
+	public int deleteBoard(String bId) {
+
+
+		Connection con = null;
+		PreparedStatement pstmt = null;	
+		int re;
+
+		String sql = "DELETE FROM jspboard WHERE bid=?";
+
+		try {
+
+			con = ds.getConnection();
+
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1,bId);
+			
+			pstmt.executeUpdate();
+			return re=1;
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return re=0;
+	} // delete end
+	
+	// 글 수정 로직
+	public int updateBoard(BoardVO board) {
+		// Connection , preparedStatement 객체 선언
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		int resultCode;
+		// 구문 작성시 bId는 auto_increment가 붙어서 입력안해도 된다.
+		// bName,bTitle,bContent는 폼에서 날려준걸 넣는다
+		// bDate는 자동으로 현재 서버시간을 입력함
+		// bHit는 자동으로 0을 입력함
+		String sql = "UPDATE jspboard " 
+		+ "SET bname=?,btitle=?,bcontent=?,bdate=?,bhit=? WHERE bId=?";
+
+		try {
+			// 커넥션 생성및 pstmt에 쿼리문을 넣고 완성시켜서 실행까지하고
+			// close()로 메모리 회수까지 하기
+			con = ds.getConnection();
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, board.getbName());	  // 연습으로 넣은거임 원래는 수정할 필요없어서 없어도됨	
+			pstmt.setString(2, board.getbTitle());
+			pstmt.setString(3, board.getbContent());
+			pstmt.setTimestamp(4, board.getbDate());  // 연습으로 넣은 거 원래 필요없다
+			pstmt.setInt(5, board.getbHit());         //  이하동문 수정할필요가 없엇으니
+			pstmt.setInt(6, board.getbId());
+
+			pstmt.executeUpdate();
+			resultCode = 1;
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			resultCode = 0;
+		} finally {
+			try {
+				// con 닫기
+				if (con != null && !con.isClosed()) {
+					con.close();
+				}
+				// pstmt 닫기
+				if (pstmt != null && !pstmt.isClosed()) {
+					pstmt.close();
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return resultCode;
+	} // update 끝
 }

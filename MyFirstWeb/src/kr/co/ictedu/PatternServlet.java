@@ -11,9 +11,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import jdk.nashorn.internal.ir.RuntimeNode.Request;
+import kr.co.ictedu.board.service.BoardDeleteService;
 import kr.co.ictedu.board.service.BoardDetailService;
 import kr.co.ictedu.board.service.BoardListService;
+import kr.co.ictedu.board.service.BoardUpdateService;
 import kr.co.ictedu.board.service.BoardWriteService;
 import kr.co.ictedu.board.service.IBoardService;
 
@@ -86,6 +87,7 @@ public class PatternServlet extends HttpServlet {
 		// 사전준비
 		// jsp페이지가 html형식으로 이뤄져 있음을 알려주는 코드 한글 안깨지게 해서 나오게하는거
 		response.setContentType("text/html); charset=UTF-8");
+		
 		request.setCharacterEncoding("utf-8");
 		response.setCharacterEncoding("utf-8");
 		
@@ -97,7 +99,7 @@ public class PatternServlet extends HttpServlet {
 		}else if(uri.equals("/MyFirstWeb/userlogin.do")){
 			System.out.println("로그인 요청 확인");
 		}else if(uri.equals("/MyFirstWeb/userupdate.do")) {
-			System.out.println("수정요청 확인");
+			System.out.println("유저수정확인");
 		}else if(uri.equals("/MyFirstWeb/userdelete.do")) {
 			System.out.println("탈퇴요청확인"); 
 		}
@@ -109,12 +111,27 @@ public class PatternServlet extends HttpServlet {
 			// 복잡한 서비스 로직을 이 파일에는 한 줄만 기입해서 처리합니다.
 			sv.execute(request, response);
 			// 경로 저장시 / 는 WebContent폴더가 기본으로 잡혀있습니다.
-			ui = "/board/board_list.jsp";
+			ui = "/boardselect.do";
 			// 경로 저장 후에는 페이지 강제이동(forward)를 수행합니다.
 		}else if(uri.equals("/MyFirstWeb/boardupdate.do")) {
-			System.out.println("글 수정창으로 이동합니다.");
+			 sv= new BoardDetailService();
+			sv.execute(request, response);
+			ui="/board/board_update_form.jsp";
+		}else if(uri.equals("/MyFirstWeb/boardupdateok.do")) {
+			// 1. 서비스 객체 생성
+			sv = new BoardUpdateService();
+			// 2. 서비스 메서드 실행
+			sv.execute(request, response);
+			// 3. 수정한 다음 디테일로 보내기
+			// 내가 수정한 글번호 받아오기
+			//String strbId=request.getParameter("bId");
+			ui="/boarddetail.do";
+			
 		}else if(uri.equals("/MyFirstWeb/boarddelete.do")) {
-			System.out.println("글 삭제 창으로 이동합니다.");
+			sv =new BoardDeleteService();
+			sv.execute(request,response);
+			ui="/boardselect.do";
+			
 		}else if(uri.equals("/MyFirstWeb/boardselect.do")) {
 			// 글 조회창 로직을 실행하도록 내부코드 작성
 			sv =new BoardListService();
@@ -126,8 +143,8 @@ public class PatternServlet extends HttpServlet {
 		    sv.execute(request, response);
 			ui="board/board_detail.jsp";
 		}else {
-		}
 			out.print("잘못된 패턴입니다.");
+		}
 		// 포워드 로직은 조건문이 모두 자동한 뒤에 실행합니다.
 		// RequestDispatcher를 사용해 포워딩을 하면
 		// request, response를 jsp페이지에 전달 할 수가 있습니다.

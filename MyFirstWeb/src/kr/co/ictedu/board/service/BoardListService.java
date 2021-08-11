@@ -1,6 +1,7 @@
 package kr.co.ictedu.board.service;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -16,7 +17,7 @@ public class BoardListService implements IBoardService  {
 		// 바로 DAO부터 생성
 		BoardDAO dao =BoardDAO.getInstance();
 		//전체리스트 가져오기
-		ArrayList<BoardVO> boardList=dao.getBoardList();
+		List<BoardVO> boardList=dao.getBoardList();
 		System.out.println(boardList);
 		// 받아온 리스트를 .jsp에 전달하기
 		// requset에 데이터를 실어놔야 합니다.
