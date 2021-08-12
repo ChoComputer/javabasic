@@ -10,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import kr.co.ictedu.board.service.BoardDeleteService;
 import kr.co.ictedu.board.service.BoardDetailService;
@@ -17,6 +18,11 @@ import kr.co.ictedu.board.service.BoardListService;
 import kr.co.ictedu.board.service.BoardUpdateService;
 import kr.co.ictedu.board.service.BoardWriteService;
 import kr.co.ictedu.board.service.IBoardService;
+import kr.co.ictedu.user.model.UsersVO;
+import kr.co.ictedu.user.service.IUserService;
+import kr.co.ictedu.user.service.UserJoinService;
+import kr.co.ictedu.user.service.UserLoginService;
+import kr.co.ictedu.user.service.UserLogoutService;
 
 /**
  * Servlet implementation class PatternServlet
@@ -73,10 +79,14 @@ public class PatternServlet extends HttpServlet {
 		// 서비스 호출을 위해 모든 서비스 자료형을 받을 수 있는 
 		// 인터페이스 생성
 		IBoardService sv = null;  
-		
+		IUserService usv=null;
 		// 해당 로직을 실행한 뒤에 넘어갈 .jsp파일 명칭/경로 지정
 		String ui = null;
-		
+		// 세션쓰는법
+				HttpSession session=null;
+				session=request.getSession();
+				
+		UsersVO user=new UsersVO();
 		
 		// doGet에있던 모든 코드 가져오기
 		String uri = request.getRequestURI();
@@ -95,9 +105,29 @@ public class PatternServlet extends HttpServlet {
 		PrintWriter out = response.getWriter(); 
 		
 		if(uri.equals("/MyFirstWeb/join.do")) {
+			usv=new UserJoinService();
+			usv.execute(request, response);
+			ui="/boardselect.do";
 			System.out.println("회원가입 요청 확인");
 		}else if(uri.equals("/MyFirstWeb/userlogin.do")){
+			usv=new UserLoginService();
+			usv.execute(request, response);
+			// 세션에서 로그인 여부 확인
+			String result =(String)session.getAttribute("login");
+			System.out.println(result);
+			
+			if(result!=null &&result.equals("fail")) {
+				session.invalidate();
+			ui="/users/user_login.jsp";
+			}else {ui="/boardselect.do";}
 			System.out.println("로그인 요청 확인");
+			
+		}else if(uri.equals("/MyFirstWeb/userlogout.do")) {
+			usv=new UserLogoutService();
+			usv.execute(request, response);
+			ui="/users/user_login.jsp";
+			
+			System.out.println("로그아웃확인"); 
 		}else if(uri.equals("/MyFirstWeb/userupdate.do")) {
 			System.out.println("유저수정확인");
 		}else if(uri.equals("/MyFirstWeb/userdelete.do")) {
@@ -111,6 +141,7 @@ public class PatternServlet extends HttpServlet {
 			// 복잡한 서비스 로직을 이 파일에는 한 줄만 기입해서 처리합니다.
 			sv.execute(request, response);
 			// 경로 저장시 / 는 WebContent폴더가 기본으로 잡혀있습니다.
+			
 			ui = "/boardselect.do";
 			// 경로 저장 후에는 페이지 강제이동(forward)를 수행합니다.
 		}else if(uri.equals("/MyFirstWeb/boardupdate.do")) {

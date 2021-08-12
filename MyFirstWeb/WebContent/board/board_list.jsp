@@ -42,5 +42,6 @@
 		</tbody>
 	</table>
 	<a href ="/MyFirstWeb/board/board_Write_form.jsp"><input type="button"value="글쓰기"></a>
+	<a href="/MyFirstWeb/userlogout.do"><input type="button" value="로그아웃"></a>
 </body>
 </html>

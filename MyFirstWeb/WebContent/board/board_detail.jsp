@@ -41,7 +41,9 @@
 			
 			<form action="/MyFirstWeb/boarddelete.do"method="post">
 			<input type="hidden" value="${board.bId }"name="bId"><!--  사용자 눈에ㅐ는 안보임 -->
-			<input type="submit" value="삭제하기"></form>
+			<input type="submit" value="삭제하기">
+			<a href="/MyFirstWeb/userlogout.do"><input type="button" value="로그아웃"></a>
+	</form>
 			
 
 </body>

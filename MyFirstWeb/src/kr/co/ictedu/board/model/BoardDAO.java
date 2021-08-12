@@ -239,4 +239,35 @@ public class BoardDAO {
 		}
 		return resultCode;
 	} // update 끝
+	
+	// 글 조회수를 상승시키는 메서드
+	public void upHit(String bId) {
+		// 필요한 변수들을 생성해 주세요
+		Connection con = null;
+		PreparedStatement pstmt=null;
+		// 특정 글의 조회수를 1올리는 쿼리문 
+		String sql="UPDATE jspboard SET bHit = bHit + 1 WHERE bId=?";
+		// DB연결 후 코드를 실행해 주세요
+		try {
+			con = ds.getConnection();
+			pstmt=con.prepareStatement(sql);
+			pstmt.setString(1, bId);
+			pstmt.executeUpdate();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				// con 닫기
+				if (con != null && !con.isClosed()) {
+					con.close();
+				}
+				// pstmt 닫기
+				if (pstmt != null && !pstmt.isClosed()) {
+					pstmt.close();
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	} // end upHit
 }
