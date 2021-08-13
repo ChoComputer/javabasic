@@ -15,6 +15,7 @@ import javax.servlet.http.HttpSession;
 import kr.co.ictedu.board.service.BoardDeleteService;
 import kr.co.ictedu.board.service.BoardDetailService;
 import kr.co.ictedu.board.service.BoardListService;
+import kr.co.ictedu.board.service.BoardPagingService;
 import kr.co.ictedu.board.service.BoardUpdateService;
 import kr.co.ictedu.board.service.BoardWriteService;
 import kr.co.ictedu.board.service.IBoardService;
@@ -165,8 +166,13 @@ public class PatternServlet extends HttpServlet {
 			
 		}else if(uri.equals("/MyFirstWeb/boardselect.do")) {
 			// 글 조회창 로직을 실행하도록 내부코드 작성
-			sv =new BoardListService();
-			sv.execute(request,response);
+			//sv =new BoardListService();
+			//sv.execute(request,response);
+			//ui="/board/board_list.jsp";
+			
+			// 위의 일반 전체 게시물 가져오기를 페이징 가져오기로 대채하기
+			sv=new BoardPagingService();
+			sv.execute(request, response); // page가 접속하는 순간 request에 인식이 되있음
 			ui="/board/board_list.jsp";
 		
 		}else if(uri.equals("/MyFirstWeb/boarddetail.do")){

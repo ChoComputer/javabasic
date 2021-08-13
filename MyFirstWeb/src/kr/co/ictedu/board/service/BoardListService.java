@@ -36,7 +36,7 @@ public class BoardListService implements IBoardService {
 		// 접속하자 마자 바로 전체 데이터만 들고오면 됨
 		// 바로 DAO부터 생성
 		BoardDAO Bdao =BoardDAO.getInstance();
-		//전체리스트 가져오기
+		// 전체리스트 가져오기
 		List<BoardVO> boardList=Bdao.getBoardList();
 		System.out.println(boardList);
 		// 받아온 리스트를 .jsp에 전달하기

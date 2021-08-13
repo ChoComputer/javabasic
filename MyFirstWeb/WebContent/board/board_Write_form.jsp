@@ -21,7 +21,7 @@
  				</tr>
  				<tr>
  					<td> 글쓴이</td>
- 					<td><input type="text" value="${board.bName }" required></td>
+ 					<td><input type="text" name="writer"value="${board.bName }" required></td>
  				</tr>
 	 		</table>
 	 		<input type = "submit" value="글쓰기">
